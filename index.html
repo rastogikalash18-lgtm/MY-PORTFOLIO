@@ -3,66 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kalash Rastogi | Portfolio</title>
 
     <link rel="stylesheet" href="myportfolio.css">
 </head>
 <body>
 
-    <nav>
-        <h2>KALASH RASTOGI</h2>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Kalash Rastogi</div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="menu-btn">&#9776;</div>
     </nav>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+          <img src="mypic.jpeg" alt="Kalash Rastogi" class="profile-img">
+            <h1>Hi, I'm <span>Kalash Rastogi</span></h1>
 
-        <div class="hero-text">
-            <h1>Hello, I'm Kalash
-            </h1>
+            <h2>B.Tech Computer Science Student</h2>
 
             <p>
-                B.Tech CSD Student learning Web Development and I have also built strong intrest as a Software Devloper.
+                Passionate Web Developer, React Learner and Problem Solver.
+                I enjoy building responsive websites and learning modern technologies.
             </p>
 
-            <button>Hire Me</button>
-        </div>
+            <a href="Myresume.pdf" class="btn" download>
+                Download Resume
+            </a>
 
-        <div class="hero-image">
-            <img src="mypic.jpeg" alt="Profile">
-        </div>
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
 
+        </div>
     </section>
 
-    <section class="skills">
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
 
-        <h2>My Skills</h2>
+        <p style="text-align:center;">
+           Hello! I'm Kalash Rastogi, a B.Tech Computer Science student with a strong interest in web development, 
+           programming, and technology. I enjoy creating responsive and user-friendly websites using HTML, CSS, JavaScript, 
+           and React. I am continuously improving my problem-solving skills through Data Structures and Algorithms. 
+           I am passionate about learning new technologies and applying them to real-world projects.
+        </p>
+    </section>
 
-        <div class="skill-container">
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
 
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Creating webpage structures.</p>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">C++</div>
+            <div class="skill">DSA</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>
+                    Responsive portfolio website created using HTML, CSS and JavaScript.
+                </p>
             </div>
 
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Designing beautiful websites.</p>
+            <div class="project-card">
+                <h3>Blog Website</h3>
+                <p>
+                    Modern blog website with responsive design.
+                </p>
             </div>
 
-            <div class="card">
-                <h3>Java</h3>
-                <p>Object Oriented Programming.</p>
+            <div class="project-card">
+                <h3>React Project</h3>
+                <p>
+                    Dynamic web application developed using React.
+                </p>
             </div>
 
         </div>
-
     </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Email: rastogikalash18@gmail.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+        <p>GitHub: rastogikalash18</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Kalash Rastogi | All Rights Reserved</p>
+    </footer>
+
+    <script src="myportfolio.js"></script>
 
 </body>
 </html>
